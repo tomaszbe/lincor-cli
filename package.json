@@ -1,0 +1,13 @@
+{
+  "name": "lincor-cli",
+  "version": "1.0.0",
+  "description": "Command line interface to Lincor API.",
+  "author": "Tomasz Barański",
+  "license": "MIT",
+  "bin": {
+    "lincor": "./bin/lincor.js"
+  },
+  "dependencies": {
+    "lincor": "https://github.com/tomaszbe/lincor"
+  }
+}
