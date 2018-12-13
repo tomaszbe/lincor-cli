@@ -8,6 +8,7 @@
     "lincor": "./bin/lincor.js"
   },
   "dependencies": {
+    "commander": "^2.19.0",
     "lincor": "https://github.com/tomaszbe/lincor"
   }
 }
