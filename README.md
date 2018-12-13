@@ -27,7 +27,7 @@ $ lincor --help
 ```
 
 ## Authorization
-Most commands require the user to be authorized. In order to sign in, provide a *credentials.json* file with the followig contents:
+Most commands require the user to be authorized. In order to sign in, provide a *JSON* file with the followig contents:
 ```json
 {
   "companyname": "<company name here>",
@@ -35,7 +35,7 @@ Most commands require the user to be authorized. In order to sign in, provide a 
   "password": "<password goes here>"
 }
 ```
-Specify credentials file path using *--credentials* cli option.
+Specify credentials file path using *--credentials* CLI option. Defaults to *credentials.json* in the current directory.
 
 
 ## Reference
