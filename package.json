@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "commander": "^2.19.0",
-    "lincor": "https://github.com/tomaszbe/lincor"
+    "lincor": "^0.1.2"
   },
   "repository": "https://github.com/tomaszbe/lincor-cli"
 }

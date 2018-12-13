@@ -34,9 +34,10 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-"lincor@https://github.com/tomaszbe/lincor":
+lincor@^0.1.2:
   version "0.1.2"
-  resolved "https://github.com/tomaszbe/lincor#2d8a1b850ba58f9378a4619df63e16be62f5d0d4"
+  resolved "https://registry.yarnpkg.com/lincor/-/lincor-0.1.2.tgz#d25a97aa6e9eacee614d8ebb14c6994b946b169e"
+  integrity sha512-PGGtQkpe6wZVxKKOCwcWdQS/tcAhchlqCdf48oRkjHCJFi04+ekwcSOW5BHLGUuYDnho1sNGwhrQDSCETgSacA==
   dependencies:
     axios "^0.18.0"
     moment "^2.22.2"
