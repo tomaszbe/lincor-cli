@@ -31,7 +31,7 @@ function downloadObjects(cmd) {
   })
 }
 
-program.description('CLI interface to Lincor API.')
+program.description('Command Line Interface to Lincor API.')
 
 program.option(
   '-c, --credentials [path]',
