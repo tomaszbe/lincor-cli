@@ -10,12 +10,12 @@ Install globally using your favourite package manager.
 
 ### Using Yarn
 ```sh
-$ yarn global add https://github.com/tomaszbe/lincor-cli
+$ yarn global add lincor-cli
 ```
 
 ### Using NPM
 ```sh
-$ npm -g i https://github.com/tomaszbe/lincor-cli
+$ npm -g i lincor-cli
 ```
 
 ## Usage
