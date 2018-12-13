@@ -16,19 +16,25 @@ function signIn() {
 
 function printVersion() {
   lincor.init()
-  lincor.getVersion().then(version => console.log(version))
+  lincor
+    .getVersion()
+    .then(version => console.log(version))
+    .catch(error => console.error(error.message))
 }
 
 function downloadObjects(cmd) {
   signIn()
-  lincor.getCars().then(cars => {
-    let json = JSON.stringify(cars)
-    if (cmd.stdOut) {
-      console.log(json)
-    } else {
-      fs.writeFileSync(cmd.file, json)
-    }
-  })
+  lincor
+    .getCars()
+    .then(cars => {
+      let json = JSON.stringify(cars)
+      if (cmd.stdOut) {
+        console.log(json)
+      } else {
+        fs.writeFileSync(cmd.file, json)
+      }
+    })
+    .catch(error => console.error(error.message))
 }
 
 program.description('Command Line Interface to Lincor API.')
