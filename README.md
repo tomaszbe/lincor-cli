@@ -3,7 +3,7 @@
 Command Line Interface to Lincor API.
 
 ## Requirements
-You need *node.js* and a package manager (*npm* or *yarn*) to install and use the app.
+You need ***node.js*** and a package manager (***npm*** or ***yarn***) to install and use the app.
 
 ## Installation
 Install globally using your favourite package manager.
@@ -19,7 +19,7 @@ $ npm -g i https://github.com/tomaszbe/lincor-cli
 ```
 
 ## Usage
-First, make sure your package manager's global bin directory is in PATH.
+First, make sure your package manager's global bin directory is in *PATH*.
 
 Run the commnad to list available options:
 ```sh
@@ -27,7 +27,7 @@ $ lincor --help
 ```
 
 ## Authorization
-Most commands require the user to be authorized. In order to sign in, provide a *JSON* file with the followig contents:
+Most commands require the user to be authorized. In order to sign in, provide a **JSON** file with the followig contents:
 ```json
 {
   "companyname": "<company name here>",
@@ -35,7 +35,7 @@ Most commands require the user to be authorized. In order to sign in, provide a 
   "password": "<password goes here>"
 }
 ```
-Specify credentials file path using *--credentials* CLI option. Defaults to *credentials.json* in the current directory.
+Specify credentials file path using ***--credentials*** CLI option. Defaults to ***credentials.json*** in the current directory.
 
 
 ## Reference
