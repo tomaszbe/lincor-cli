@@ -1,41 +1,7 @@
 #!/usr/bin/env node
 
-const lincor = require('lincor')
-const fs = require('fs')
 const program = require('commander')
-
-function signIn() {
-  try {
-    const credentialsFile = fs.readFileSync(program.credentials)
-    const credentials = JSON.parse(credentialsFile.toString())
-    lincor.init(credentials)
-  } catch (e) {
-    lincor.init()
-  }
-}
-
-function printVersion() {
-  lincor.init()
-  lincor
-    .getVersion()
-    .then(version => console.log(version))
-    .catch(error => console.error(error.message))
-}
-
-function downloadObjects(cmd) {
-  signIn()
-  lincor
-    .getCars()
-    .then(cars => {
-      let json = JSON.stringify(cars)
-      if (cmd.stdOut) {
-        console.log(json)
-      } else {
-        fs.writeFileSync(cmd.file, json)
-      }
-    })
-    .catch(error => console.error(error.message))
-}
+const actions = require('../src/actions')
 
 program.description('Command Line Interface to Lincor API.')
 
@@ -49,7 +15,7 @@ program
   .command('version')
   .alias('v')
   .description('Get Lincor API version number.')
-  .action(printVersion)
+  .action(actions.version)
 
 program
   .command('download-objects')
@@ -60,6 +26,6 @@ program
     '-s, --std-out',
     'Print results to standard output instead of writing to file.'
   )
-  .action(downloadObjects)
+  .action(actions.downloadObjects)
 
 program.parse(process.argv)
