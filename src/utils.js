@@ -4,9 +4,8 @@ const path = require('path')
 
 const utils = {}
 
-utils.signIn = function() {
+utils.signIn = function(credentialsFilePath) {
   try {
-    let credentialsFilePath = program.credentials
     if (!path.isAbsolute(credentialsFilePath)) {
       credentialsFilePath = path.join(process.cwd(), credentialsFilePath)
     }

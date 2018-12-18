@@ -3,7 +3,7 @@ const fs = require('fs')
 const { signIn, printError } = require('../utils')
 
 module.exports = function(cmd) {
-  signIn()
+  signIn(cmd.parent.credentials)
   lincor
     .getCars()
     .then(cars => {
